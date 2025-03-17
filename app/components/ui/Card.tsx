@@ -48,7 +48,9 @@ const CardContent = forwardRef<HTMLDivElement, CardProps>(({ className, ...props
 CardContent.displayName = 'CardContent';
 
 const CardFooter = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(({ className, ...props }, ref) => (
-  <div ref={ref} className={classNames('flex items-center p-6 pt-0', className)} {...props} />
+  <div ref={ref} className={classNames('flex items-center p-6 pt-0', className)} {...props}>
+    <p>© 2025 Bolt hosted by <a href="https://servermikro.com">Server Mikro</a></p>
+  </div>
 ));
 CardFooter.displayName = 'CardFooter';
 
